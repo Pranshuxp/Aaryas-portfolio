@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch and internal tools
+scratch/
+*.log
+.gemini/
+.system_generated/

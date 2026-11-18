@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarya Bhujade — AI Filmmaker, AI Artist & VFX Specialist</title>
+  <meta name="description" content="Portfolio of Aarya Bhujade (@aarya_x_apertures) — AI Filmmaker, AI Artist, Graphic Designer & VFX Specialist based in Mumbai, India. Directing Pixels. Crafting Cinema with AI.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-abyss text-slate-100 antialiased selection:bg-amber-500/20 selection:text-amber-300">
+  
+  <!-- Fixed Full-Screen Cinema Backdrop Behind Post-Hero Sections -->
+  <div class="ambient-cinema-bg" aria-hidden="true">
+    <div class="cinema-bg-image"></div>
+    <div class="cinema-bg-tint"></div>
+  </div>
+
+  <!-- Minimal Instant Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-badge">
+        <span class="pulse-dot"></span>
+        <span class="mono-label">NEURAL ENGINE INITIALIZING</span>
+      </div>
+      <h2 class="preloader-title">AARYA BHUJADE <span class="text-amber">CINEMA</span></h2>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <div class="preloader-stats">
+        <span id="preload-status" class="mono-sub">CACHING PRIORITY FRAMES...</span>
+        <span id="preload-percentage" class="mono-sub text-amber">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Header Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#hero-trigger" class="brand-link">
+        <span class="brand-symbol">⚡</span>
+        <div class="brand-text-col">
+          <span class="brand-name">AARYA BHUJADE</span>
+          <span class="brand-sub">AI FILMMAKER // VFX // MUMBAI</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#showreel" class="nav-item"><span class="nav-num">01</span><span class="nav-txt">Showreel</span></a>
+        <a href="#works" class="nav-item"><span class="nav-num">02</span><span class="nav-txt">Works</span></a>
+        <a href="#reels" class="nav-item"><span class="nav-num">03</span><span class="nav-txt">Reels</span></a>
+        <a href="#comics" class="nav-item"><span class="nav-num">04</span><span class="nav-txt">Comics</span></a>
+        <a href="#arsenal" class="nav-item"><span class="nav-num">05</span><span class="nav-txt">Arsenal</span></a>
+        <a href="#experience" class="nav-item"><span class="nav-num">06</span><span class="nav-txt">Experience</span></a>
+        <a href="#pipeline" class="nav-item"><span class="nav-num">07</span><span class="nav-txt">Pipeline</span></a>
+        <a href="#about" class="nav-item"><span class="nav-num">08</span><span class="nav-txt">About</span></a>
+        <a href="#contact" class="nav-item"><span class="nav-num">09</span><span class="nav-txt">Contact</span></a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="sound-toggle" class="sound-btn" title="Toggle Ambient Synthesizer" aria-label="Toggle Sound">
+          <span class="sound-bars">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+            <span class="bar bar-4"></span>
+          </span>
+          <span class="sound-label mono-label">AUDIO FX</span>
+        </button>
+
+        <a href="./assets/aarya_bhujade_resume.pdf" download="Aarya_Bhujade_Resume.pdf" class="cta-pill">
+          <span class="cta-dot"></span>
+          <span>Resume (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SCROLL CONTAINER -->
+  <main id="main-content">
+    
+    <!-- ==========================================================================
+         HERO SECTION: PINNED 300vh CANVAS FRAME-SEQUENCE SCRUBBER (100% INTACT)
+         ========================================================================== -->
+    <section id="hero-trigger" class="hero-scroll-wrapper">
+      <div id="hero-pin" class="hero-pin-container">
+        
+        <!-- Canvas Frame Sequence Viewer -->
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        
+        <!-- Subtle Vignette / Edge Grading Overlay for Visual Depth -->
+        <div class="hero-vignette" aria-hidden="true"></div>
+
+        <!-- Upper-Left Hero Typography & Floating Editorial Overlay -->
+        <div class="hero-hud-container">
+          <div class="hero-badge">
+            <span class="badge-status-dot"></span>
+            <span class="badge-text mono-label">ADVFX+ MAAC MUMBAI // AAFT PHOTOGRAPHY</span>
+          </div>
+
+          <h1 class="hero-editorial-title">
+            <span class="hero-name-line">AARYA</span>
+            <span class="hero-name-line">BHUJADE</span>
+          </h1>
+
+          <div class="hero-editorial-subtitle">
+            AI FILMMAKER &amp; VFX SPECIALIST
+          </div>
+
+          <p class="hero-editorial-tagline">
+            &ldquo;Directing Pixels. Crafting Cinema with AI.&rdquo;
+          </p>
+
+          <!-- Minimal Specialty Icon Strip -->
+          <div class="hero-specialty-strip">
+            <div class="specialty-item">
+              <div class="specialty-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                </svg>
+              </div>
+              <span class="specialty-label">AI Films &amp;<br>Cinematic Video</span>
+            </div>
+
+            <div class="specialty-item">
+              <div class="specialty-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                </svg>
+              </div>
+              <span class="specialty-label">Concept Art<br>&amp; Design</span>
+            </div>
+
+            <div class="specialty-item">
+              <div class="specialty-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                  <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                  <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                  <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                  <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                  <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg>
+              </div>
+              <span class="specialty-label">Motion<br>Graphics</span>
+            </div>
+
+            <div class="specialty-item">
+              <div class="specialty-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                  <path d="M5 3v4"></path>
+                  <path d="M19 17v4"></path>
+                  <path d="M3 5h4"></path>
+                  <path d="M17 19h4"></path>
+                </svg>
+              </div>
+              <span class="specialty-label">VFX &amp;<br>Compositing</span>
+            </div>
+          </div>
+
+          <!-- Sleek Pill CTA Buttons -->
+          <div class="hero-pill-actions">
+            <a href="#showreel" class="hero-pill-btn pill-primary">
+              <span class="play-icon-tri">▷</span>
+              <span>Watch Showreel</span>
+            </a>
+            <a href="#works" class="hero-pill-btn pill-secondary">
+              <span>Explore Work</span>
+              <span class="arrow-up-right">↗</span>
+            </a>
+          </div>
+
+          <!-- Hidden telemetry DOM references for JS null safety -->
+          <div class="hero-telemetry-guard" style="display: none;" aria-hidden="true">
+            <div id="scrub-progress-fill"></div>
+            <span id="telemetry-frame">001 / 115</span>
+            <span id="telemetry-percent">00.0%</span>
+            <span id="telemetry-phase">01: CONCEPT PROTOTYPE</span>
+          </div>
+        </div>
+
+        <!-- Floating Scroll Prompt (Bottom Center/Right) -->
+        <div class="scroll-indicator-wrap" id="scroll-prompt">
+          <div class="mouse-scroll-icon">
+            <span class="mouse-wheel"></span>
+          </div>
+          <span class="mono-label scroll-hint">SCROLL TO ENTER</span>
+          <span class="scroll-distance-label mono-sub text-muted">300vh Sequence Canvas</span>
+        </div>
+
+        <!-- Bottom Timeline Marker Ticks -->
+        <div class="timeline-ticks-hud" aria-hidden="true">
+          <div class="tick active" data-phase="0"><span>0% RAW</span></div>
+          <div class="tick-line"></div>
+          <div class="tick" data-phase="35"><span>35% SYNTHESIS</span></div>
+          <div class="tick-line"></div>
+          <div class="tick" data-phase="70"><span>70% COMPOSITING</span></div>
+          <div class="tick-line"></div>
+          <div class="tick" data-phase="100"><span>100% CINEMA</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STATS STRIP / TRANSITION SEAM -->
+    <section class="stats-ribbon">
+      <div class="container ribbon-grid">
+        <div class="stat-card">
+          <span class="stat-number">28+</span>
+          <span class="stat-label">Commercial & AI Film Productions</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">16+</span>
+          <span class="stat-label">Director Reels & Broadcast Promos</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Comic Chronicle Visual Panels</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">4K</span>
+          <span class="stat-label">Cinematic ACEScg Color Science</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 01: SHOWREEL 2026 // MASTER MONTAGE
+         ========================================================================== -->
+    <section id="showreel" class="section showreel-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag mono-label">
+            <span class="tag-accent text-amber">//</span> 01 SHOWREEL 2026 // MASTER MONTAGE
+          </div>
+          <h2 class="section-title">
+            The Synthetic Cinema <br>
+            <span class="text-gradient-teal-amber">Showreel 2026</span>
+          </h2>
+          <p class="section-description">
+            4K UHD // 24.000 FPS // DOLBY ATMOS SIM. A curated theatrical montage bringing together commercial visual campaigns, sacred epics, dynamic horror VFX, and high-energy automotive motion.
+          </p>
+        </div>
+
+        <div class="showreel-theatrical-box glass-panel">
+          <div class="showreel-poster-wrap">
+            <video 
+              id="showreel-video-element"
+              class="showreel-video"
+              src="./assets/videos/reel_DdauAxzqB8m.mp4"
+              poster="./assets/images/showreel_thumb.webp"
+              autoplay 
+              muted 
+              loop 
+              playsinline 
+              preload="auto"
+            ></video>
+            <div class="showreel-overlay"></div>
+            
+            <button id="play-showreel-btn" class="play-showreel-circle" aria-label="Toggle Showreel Audio / Playback">
+              <svg id="showreel-play-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+
+            <div class="showreel-meta-bar">
+              <span id="showreel-audio-status" class="mono-label text-amber">AUDIO: MUTED (CLICK TO UNMUTE)</span>
+              <span class="mono-label text-teal">MASTER: 4K UHD // 24 FPS</span>
+            </div>
+          </div>
+
+          <div class="showreel-tracklist">
+            <div class="tracklist-header mono-label">
+              <span class="text-amber">✦</span> FEATURED SEQUENCES IN MASTER CUT
+            </div>
+            <div class="tracklist-grid">
+              <div class="track-item">
+                <span class="track-num mono-sub text-amber">01</span>
+                <div>
+                  <span class="track-title">4K Visuals Showreel</span>
+                  <span class="track-dur mono-sub text-muted">04m 41s</span>
+                </div>
+              </div>
+              <div class="track-item">
+                <span class="track-num mono-sub text-amber">02</span>
+                <div>
+                  <span class="track-title">Stranger Things Mind Flayer VFX</span>
+                  <span class="track-dur mono-sub text-muted">00m 40s</span>
+                </div>
+              </div>
+              <div class="track-item">
+                <span class="track-num mono-sub text-amber">03</span>
+                <div>
+                  <span class="track-title">Swastik Stories: Ganesh Campaign</span>
+                  <span class="track-dur mono-sub text-muted">00m 54s</span>
+                </div>
+              </div>
+              <div class="track-item">
+                <span class="track-num mono-sub text-amber">04</span>
+                <div>
+                  <span class="track-title">Pure Souls Narrative</span>
+                  <span class="track-dur mono-sub text-muted">00m 47s</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 02: CURATED ARCHIVE // SELECTED WORKS
+         ========================================================================== -->
+    <section id="works" class="section works-section">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="section-tag mono-label">
+              <span class="tag-accent text-amber">//</span> 02 CURATED ARCHIVE // 2025–2026
+            </div>
+            <h2 class="section-title">
+              Selected Works <br>
+              <span class="text-gradient-teal-amber">Films, Commercials & Music Films</span>
+            </h2>
+          </div>
+          
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-btn active" data-filter="all">All Works</button>
+            <button class="filter-btn" data-filter="films">AI Films</button>
+            <button class="filter-btn" data-filter="music_films">Music Films</button>
+            <button class="filter-btn" data-filter="ads">Commercials</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Grid populated via main.js from PROJECTS database -->
+        <div class="projects-grid" id="works-grid">
+          <!-- Dynamically injected with full project cards -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 03: INSTAGRAM REELS ARCHIVE
+         ========================================================================== -->
+    <section id="reels" class="section reels-section">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="section-tag mono-label">
+              <span class="tag-accent text-teal">//</span> 03 INSTAGRAM REELS ARCHIVE // @aarya_x_apertures
+            </div>
+            <h2 class="section-title">
+              Director's Reels <br>
+              <span class="text-gradient-teal-amber">Vertical Films & Brand Promos</span>
+            </h2>
+            <p class="section-description">
+              Client campaigns and vertical films including Payal Gaming, Kaun Banega Crorepati, Sony, Star, Zee, L&T Finance, and location cinematography.
+            </p>
+          </div>
+          
+          <a href="https://www.instagram.com/aarya_x_apertures/" target="_blank" rel="noopener noreferrer" class="cta-pill">
+            <span>@AARYA_X_APERTURES</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </div>
+
+        <!-- Reels Deck Grid -->
+        <div class="reels-deck-grid" id="reels-deck-container">
+          <!-- Dynamically injected via main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 04: THE COMIC CHRONICLES
+         ========================================================================== -->
+    <section id="comics" class="section comics-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-tag mono-label">
+            <span class="tag-accent text-amber">//</span> 04 STATIC CAROUSEL DECK // SACRED & PHILOSOPHICAL LORE
+          </div>
+          <h2 class="section-title">
+            The Comic Chronicles <br>
+            <span class="text-gradient-teal-amber">Multi-Panel Visual Graphic Novels</span>
+          </h2>
+          <p class="section-description">
+            Episodic graphic narratives, sacred mythological lore, and visual philosophical essays crafted frame-by-frame with generative AI. Click any series to open the interactive full-screen carousel reader with original captions. 6 COMPLETE SERIES // 50 PANELS.
+          </p>
+        </div>
+
+        <!-- Comics Grid -->
+        <div class="comics-grid" id="comics-container">
+          <!-- Dynamically injected via main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 05: THE ARSENAL
+         ========================================================================== -->
+    <section id="arsenal" class="section arsenal-section">
+      <div class="container">
+        
+        <div class="section-header text-center mx-auto">
+          <div class="section-tag mono-label">
+            <span class="tag-accent text-amber">//</span> 05 SYNTHETIC DIRECTING & POST-PRODUCTION STACK
+          </div>
+          <h2 class="section-title">
+            The Arsenal <br>
+            <span class="text-gradient-teal-amber">GenAI & Traditional Post Suite</span>
+          </h2>
+          <p class="section-description">
+            A state-of-the-art suite of node-based generative architectures, kinetic video models, and cinematic compositing software.
+          </p>
+        </div>
+
+        <div class="arsenal-grid">
+          
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span class="mono-sub text-amber">1080P // 4K</span>
+            </div>
+            <h3 class="card-title">KLING AI</h3>
+            <p class="card-body">Cinematic video generation, high-frame temporal coherence, and complex kinetic physical simulation.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>PHYSICS & KINETICS</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+              <span class="mono-sub text-amber">PERMANENCE</span>
+            </div>
+            <h3 class="card-title">SEEDANCE</h3>
+            <p class="card-body">Precision video generation, multi-seed shot correction, and continuous character permanence across takes.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>SHOT RE-SEEDING</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+              <span class="mono-sub text-teal">ACTING</span>
+            </div>
+            <h3 class="card-title">MINIMAX / HAILUO</h3>
+            <p class="card-body">Hyper-realistic human micro-expressions, emotive performance direction, and dynamic dolly camera motions.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>CINEMATIC MOVES</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span class="mono-sub text-amber">NODES</span>
+            </div>
+            <h3 class="card-title">COMFYUI</h3>
+            <p class="card-body">Advanced node-based image and video synthesis, custom ControlNets, IP-Adapters, and multi-pass compositing.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>NODE PIPELINES</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line></svg>
+              <span class="mono-sub text-teal">MATCHMOVE</span>
+            </div>
+            <h3 class="card-title">ADVANCED VFX</h3>
+            <p class="card-body">Deep plate cleanup, 3D matchmoving, neural inpainting, volumetric smoke/rain, and DaVinci ACES color grading.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>COMPOSITING</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <span class="mono-sub text-amber">8K PLATES</span>
+            </div>
+            <h3 class="card-title">MATTE PAINTING</h3>
+            <p class="card-body">Digital environments, 2.5D set extensions, monumental architecture, and LED virtual production stage plates.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>VIRTUAL PRODUCTION</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 16 12 12 8"></polygon></svg>
+              <span class="mono-sub text-teal">KEYFRAMES</span>
+            </div>
+            <h3 class="card-title">AI IMAGE GENERATION</h3>
+            <p class="card-body">Master keyframing, Midjourney v6 / Flux.1 prompt architecture, cinematic concept art, and theatrical poster design.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>POSTER ART</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon text-amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"></path></svg>
+              <span class="mono-sub text-amber">I2V & V2V</span>
+            </div>
+            <h3 class="card-title">AI VIDEO GENERATION</h3>
+            <p class="card-body">Image-to-video, video-to-video restyling, motion brush choreography, and temporal resolution upscaling.</p>
+            <div class="arsenal-badge-row mono-sub">
+              <span>MOTION BRUSH</span>
+            </div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">PHOTOSHOP</h3>
+            <p class="card-body">Keyframe repair, plate cleanup, inpainting, and final poster finishing before a shot is animated.</p>
+            <div class="arsenal-badge-row mono-sub"><span>FINISHING</span><span>KEYFRAMES</span></div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">PREMIERE PRO</h3>
+            <p class="card-body">Assembly through picture lock, plus reframed masters for cinema, YouTube, and vertical reels.</p>
+            <div class="arsenal-badge-row mono-sub"><span>EDITORIAL</span><span>PICTURE LOCK</span></div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">AFTER EFFECTS</h3>
+            <p class="card-body">Compositing, screen inserts, titles, and motion graphics that sit on top of the generated plates.</p>
+            <div class="arsenal-badge-row mono-sub"><span>COMPOSITE</span><span>MOTION GFX</span></div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">FLORA</h3>
+            <p class="card-body">Node-based creative canvas for chaining image, video, and reference passes in one directed workflow.</p>
+            <div class="arsenal-badge-row mono-sub"><span>NODE CANVAS</span><span>WORKFLOW</span></div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">IMAGINE ART</h3>
+            <p class="card-body">Fast keyframe and concept generation when a shot needs a locked frame before it moves.</p>
+            <div class="arsenal-badge-row mono-sub"><span>KEYFRAMES</span><span>CONCEPT</span></div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">MYSTIC</h3>
+            <p class="card-body">High-fidelity image generation for photoreal plates, faces, and environment stills.</p>
+            <div class="arsenal-badge-row mono-sub"><span>PHOTOREAL</span><span>STILLS</span></div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">RUNWAY</h3>
+            <p class="card-body">Image-to-video takes, camera moves, and shot tests before the best take is selected.</p>
+            <div class="arsenal-badge-row mono-sub"><span>I2V</span><span>TAKES</span></div>
+          </div>
+
+          <div class="arsenal-card glass-card">
+            <h3 class="card-title">HIGGSFIELD</h3>
+            <p class="card-body">Cinematic camera control and performance-led video generation for directed shot coverage.</p>
+            <div class="arsenal-badge-row mono-sub"><span>CAMERA</span><span>COVERAGE</span></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 06: PRODUCTION CREDITS & RECORD
+         ========================================================================== -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        
+        <div class="section-header-row">
+          <div>
+            <div class="section-tag mono-label">
+              <span class="tag-accent text-amber">//</span> 06 PRODUCTION CREDITS & PROFESSIONAL RECORD
+            </div>
+            <h2 class="section-title">
+              Experience & Credits <br>
+              <span class="text-gradient-teal-amber">Studios, Productions & Degrees</span>
+            </h2>
+          </div>
+          <a href="./assets/aarya_bhujade_resume.pdf" download="Aarya_Bhujade_Resume.pdf" class="cta-pill">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            <span>OFFICIAL RESUME SLATE (PDF)</span>
+          </a>
+        </div>
+
+        <div class="timeline-stack">
+          
+          <!-- Current Studio: 4K Visuals -->
+          <div class="experience-card glass-card active-card">
+            <div class="exp-header">
+              <div>
+                <span class="exp-badge mono-label text-amber">CURRENT STUDIO</span>
+                <h3 class="exp-company">4K VISUALS</h3>
+                <div class="exp-role mono-sub">Senior AI Artist | GenAI &amp; VFX</div>
+              </div>
+              <div class="exp-time mono-label text-amber">2025 – PRESENT</div>
+            </div>
+            <ul class="card-list exp-bullets">
+              <li>Creating AI-driven visuals and sequences for promotional campaigns, branded content, and feature-film projects.</li>
+              <li>Working across the end-to-end AI production pipeline: concept, visualization, generation, refinement, compositing, and final delivery.</li>
+              <li>Integrating AI-generated elements with live-action footage, scans, mattes, and VFX.</li>
+              <li>Developing cinematic AI shots, environments, characters, and visual assets with consistency across complex sequences.</li>
+              <li>Collaborating with creative, VFX, production, and post-production teams to deliver production-ready visuals on deadline.</li>
+              <li>Applying advanced GenAI workflows alongside traditional VFX and post-production for film-ready results.</li>
+            </ul>
+          </div>
+
+          <!-- Production Studio: Swastik Stories -->
+          <div class="experience-card glass-card">
+            <div class="exp-header">
+              <div>
+                <span class="exp-badge mono-label text-teal">PRODUCTION STUDIO</span>
+                <h3 class="exp-company">SWASTIK STORIES</h3>
+                <div class="exp-role mono-sub">AI Artist | Visual Storyteller | Graphic &amp; Motion Designer</div>
+              </div>
+              <div class="exp-time mono-label text-teal">2024 – 2025</div>
+            </div>
+            <ul class="card-list exp-bullets">
+              <li>Created AI-generated visuals, concept art, and characters for creative and promotional projects.</li>
+              <li>Designed original logos, visual identities, and branding assets for promotional projects.</li>
+              <li>Developed character designs using AI tools and digital illustration techniques.</li>
+              <li>Executed visual storytelling for videos, promos, and digital content.</li>
+              <li>Produced motion graphics to animate concepts, characters, and visual elements.</li>
+              <li>Used advanced AI tools for image generation, enhancement, and creative workflows.</li>
+              <li>Collaborated with production and creative teams to deliver assets within deadlines.</li>
+            </ul>
+          </div>
+
+          <!-- Role 2: VsnapU -->
+          <div class="experience-card glass-card">
+            <div class="exp-header">
+              <div>
+                <span class="exp-badge mono-label text-amber">COMMERCIAL &amp; CONTENT</span>
+                <h3 class="exp-company">VSNAPU</h3>
+                <div class="exp-role mono-sub">Professional Photographer &amp; Content Creator</div>
+              </div>
+              <div class="exp-time mono-label text-amber">2022 – 2024</div>
+            </div>
+            <ul class="card-list exp-bullets">
+              <li>Created premium visual content for brands and luxury hospitality clients.</li>
+              <li>Specialized in fashion, travel, and interior/architectural photography.</li>
+              <li>Executed shoots in Ladakh, Andaman, Goa, Chennai, and Mumbai.</li>
+              <li>Delivered imagery for marketing, digital platforms, and promotions.</li>
+            </ul>
+          </div>
+
+          <!-- Role 3: RAS Media -->
+          <div class="experience-card glass-card">
+            <div class="exp-header">
+              <div>
+                <span class="exp-badge mono-label text-teal">FASHION &amp; STUDIO</span>
+                <h3 class="exp-company">RAS MEDIA</h3>
+                <div class="exp-role mono-sub">Fashion &amp; E-commerce Photographer | Photo Editor</div>
+              </div>
+              <div class="exp-time mono-label text-teal">2021 – 2022</div>
+            </div>
+            <ul class="card-list exp-bullets">
+              <li>Handled photographs and post-production for fashion and e-commerce projects.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- EDUCATION & CORE SPECIALIZATIONS GRID -->
+        <div class="edu-skills-grid">
+          
+          <div class="glass-card">
+            <div class="section-tag mono-label">
+              <span class="tag-accent text-amber">//</span> ACADEMIC CREDENTIALS &amp; DEGREES
+            </div>
+            <div class="edu-item">
+              <div class="edu-row">
+                <h4 class="edu-degree">ADVFX+</h4>
+                <span class="mono-sub text-amber">2023 – 2025</span>
+              </div>
+              <p class="edu-school mono-sub">MAAC Academy, Andheri, Mumbai</p>
+              <p class="edu-desc">Advanced VFX &amp; 3D compositing, dynamic simulations, camera tracking, roto, and film post-production pipelines.</p>
+            </div>
+            <div class="edu-item">
+              <div class="edu-row">
+                <h4 class="edu-degree">DIPLOMA IN PHOTOGRAPHY</h4>
+                <span class="mono-sub text-amber">2021 – 2022</span>
+              </div>
+              <p class="edu-school mono-sub">AAFT University, Raipur, Chhattisgarh</p>
+              <p class="edu-desc">Professional cinematography optics, studio lighting, visual framing, color theory, and photographic storytelling.</p>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <div class="section-tag mono-label">
+              <span class="tag-accent text-teal">//</span> CORE SPECIALIZATIONS
+            </div>
+            <div class="skills-chips-grid">
+              <div class="skill-chip"><span class="text-amber">✦</span> AI Art &amp; Image Generation</div>
+              <div class="skill-chip"><span class="text-amber">✦</span> Prompt Engineering for AI Visuals</div>
+              <div class="skill-chip"><span class="text-amber">✦</span> Concept Art &amp; Character Design</div>
+              <div class="skill-chip"><span class="text-amber">✦</span> Visual Storytelling &amp; Direction</div>
+              <div class="skill-chip"><span class="text-amber">✦</span> Graphic &amp; Motion Graphic Artist</div>
+              <div class="skill-chip"><span class="text-amber">✦</span> Professional Photographer</div>
+            </div>
+            <div class="location-banner mono-sub">
+              <span>LOCATION BASE: MUMBAI, INDIA</span>
+              <span class="text-teal">OPEN FOR GLOBAL COMMISSIONS</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 07: THE AI FILMMAKING PIPELINE
+         ========================================================================== -->
+    <section id="pipeline" class="section pipeline-section">
+      <div class="container">
+        
+        <div class="section-header text-center mx-auto">
+          <div class="section-tag mono-label">
+            <span class="tag-accent text-amber">//</span> 07 FROM IDEA TO FINAL DELIVERY
+          </div>
+          <h2 class="section-title">
+            The AI Filmmaking Pipeline <br>
+            <span class="text-gradient-teal-amber">Human Directing, Synthetic Cameras</span>
+          </h2>
+          <p class="section-description">
+            Studios do not generate a video. They lock each department before the next one starts. AI replaces the camera, the actors, and the sets. The directing stays human.
+          </p>
+        </div>
+
+        <div class="pipeline-film-strip glass-panel">
+          
+          <div class="pipeline-phase-card phase-master">
+            <div class="phase-meta mono-label">
+              <span class="text-amber">PHASE 0</span>
+              <span class="text-muted">BEFORE ANY TOOL</span>
+            </div>
+            <h3 class="phase-title">DIRECTOR'S MINDSET</h3>
+            <p class="phase-desc">Lock a logline, theme, emotional arc, one visual rule, and 3–5 references. Every shot must answer why the camera is there and what the audience should feel. If a shot only looks pretty, it is cut.</p>
+            <div class="phase-lock mono-sub text-amber">LOCK: ONE-PAGE DIRECTOR BRIEF</div>
+          </div>
+
+          <div class="phases-grid">
+            
+            <div class="pipeline-phase-card">
+              <div class="phase-meta mono-label"><span class="text-teal">PHASE 1 // STORY</span></div>
+              <h3 class="phase-title">DEVELOPMENT</h3>
+              <p class="phase-desc">Treatment, screenplay, and beat sheet. AI shots are usually 5–10 seconds, so a 2-minute film is planned as roughly 15–25 shots.</p>
+              <div class="phase-lock mono-sub text-amber">LOCK: SCRIPT V1.0</div>
+            </div>
+
+            <div class="pipeline-phase-card">
+              <div class="phase-meta mono-label"><span class="text-teal">PHASE 2 // DESIGN</span></div>
+              <h3 class="phase-title">PRE-PRODUCTION</h3>
+              <p class="phase-desc">Style bible, character and location sheets, shot list, storyboard, and animatic. This is where most of the quality is decided.</p>
+              <div class="phase-lock mono-sub text-amber">LOCK: BIBLE, SHEETS, SHOT LIST, ANIMATIC</div>
+            </div>
+
+            <div class="pipeline-phase-card">
+              <div class="phase-meta mono-label"><span class="text-teal">PHASE 3 // IMAGE</span></div>
+              <h3 class="phase-title">KEYFRAMES</h3>
+              <p class="phase-desc">Image first, then motion. Prompt order: shot size, character, action, place, light, lens, grade. Repair the frame, then upscale it before animation.</p>
+              <div class="phase-lock mono-sub text-amber">LOCK: ONE APPROVED KEYFRAME PER SHOT</div>
+            </div>
+
+            <div class="pipeline-phase-card">
+              <div class="phase-meta mono-label"><span class="text-teal">PHASE 4 // MOTION</span></div>
+              <h3 class="phase-title">SHOT PRODUCTION</h3>
+              <p class="phase-desc">Image-to-video. Camera first, then subject, then environment. Cover the action wide, medium, and close. Record the voice, then lock lip-sync.</p>
+              <div class="phase-lock mono-sub text-amber">LOCK: BEST TAKE PER SHOT</div>
+            </div>
+
+            <div class="pipeline-phase-card">
+              <div class="phase-meta mono-label"><span class="text-teal">PHASE 5 // FINISH</span></div>
+              <h3 class="phase-title">POST-PRODUCTION</h3>
+              <p class="phase-desc">Edit to picture lock. Repair shots, composite, then grade every clip to the style bible. Sound is built in layers: dialogue, room tone, foley, effects, and music.</p>
+              <div class="phase-lock mono-sub text-amber">LOCK: PICTURE, GRADE, AND MIX</div>
+            </div>
+
+            <div class="pipeline-phase-card">
+              <div class="phase-meta mono-label"><span class="text-teal">PHASE 6 // MASTER</span></div>
+              <h3 class="phase-title">DELIVERY &amp; QC</h3>
+              <p class="phase-desc">Watch full-screen for flicker, morphing, and lip drift. Export a master, a web file, and reframed social cuts. Archive prompts, seeds, and project files.</p>
+              <div class="phase-lock mono-sub text-amber">LOCK: DELIVERED MASTER</div>
+            </div>
+
+          </div>
+
+          <div class="pipeline-flow-strip mono-sub text-amber">
+            IDEA → SCRIPT → STYLE BIBLE → SHEETS → SHOT LIST → ANIMATIC → KEYFRAMES → IMAGE-TO-VIDEO → EDIT → GRADE → SOUND → DELIVER
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 08: ABOUT AARYA BHUJADE
+         ========================================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="about-hero-grid">
+          
+          <div class="about-portrait-col">
+            <div class="authentic-portrait-card glass-panel">
+              <div class="portrait-aspect">
+                <img src="./assets/images/aarya_portrait_real.jpg" alt="Aarya Bhujade — Director Portrait" class="real-portrait-img">
+                <div class="portrait-vignette"></div>
+                <div class="corner-reg tl"></div>
+                <div class="corner-reg tr"></div>
+                <div class="corner-reg bl"></div>
+                <div class="corner-reg br"></div>
+                <div class="portrait-label-bar mono-sub">
+                  <span class="text-amber">AARYA BHUJADE</span>
+                  <span class="text-muted">MUMBAI, INDIA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portrait-actions">
+              <a href="./assets/aarya_bhujade_resume.pdf" download="Aarya_Bhujade_Resume.pdf" class="btn-cv-download mono-sub">
+                DOWNLOAD CV (PDF)
+              </a>
+              <a href="https://wa.me/919130636170" target="_blank" rel="noopener noreferrer" class="btn-wa mono-sub">
+                WHATSAPP
+              </a>
+              <a href="https://www.instagram.com/aarya_x_apertures/" target="_blank" rel="noopener noreferrer" class="btn-ig mono-sub">
+                INSTAGRAM
+              </a>
+            </div>
+          </div>
+
+          <div class="about-text-col">
+            <div class="section-tag mono-label">
+              <span class="tag-accent text-amber">//</span> 08 ABOUT AARYA BHUJADE
+            </div>
+            <h2 class="section-title">
+              NOT JUST GENERATING IMAGES. <br>
+              <span class="text-gradient-teal-amber">DIRECTING THEM.</span>
+            </h2>
+
+            <div class="about-prose">
+              <p>Every frame begins long before the tools. It begins with vision: the quiet idea of what a story should feel like before it is ever seen.</p>
+              <p>I think like a director, shaping emotion, rhythm, and meaning. I see like a cinematographer, choosing light, lens, color, and shadow so the frame carries the story. Where the camera stands, how it moves, what it reveals, and what it hides all serve the moment.</p>
+              <p>From the first idea to the final grade, the pipeline stays the same: story, visual direction, look development, cinematography, editing, color, and sound. Technology is the camera. Creative thinking is the craft. The tools change. The vision does not.</p>
+            </div>
+
+            <blockquote class="about-quote">
+              &ldquo;Not just generating images &mdash; directing them.&rdquo;
+            </blockquote>
+
+            <div class="milestones-grid font-mono">
+              <div class="milestone-box">
+                <div class="m-val text-amber">ADVFX+</div>
+                <div class="m-lbl text-muted">MAAC Mumbai</div>
+              </div>
+              <div class="milestone-box">
+                <div class="m-val text-teal">AAFT</div>
+                <div class="m-lbl text-muted">Photography Dip.</div>
+              </div>
+              <div class="milestone-box">
+                <div class="m-val text-amber">5+</div>
+                <div class="m-lbl text-muted">Shoot Expeditions</div>
+              </div>
+              <div class="milestone-box">
+                <div class="m-val text-teal">100%</div>
+                <div class="m-lbl text-muted">Visual Intent</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 09: DIRECT COMMUNICATION CHANNEL
+         ========================================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="contact-card glass-panel">
+          <div class="contact-grid">
+            
+            <div class="contact-left">
+              <div class="section-tag mono-label">
+                <span class="tag-accent text-amber">//</span> 09 DIRECT COMMUNICATION CHANNEL
+              </div>
+              <h2 class="contact-title">
+                LET'S CREATE <br>
+                <span class="text-gradient-teal-amber">CINEMA.</span>
+              </h2>
+              <p class="contact-desc">
+                Available for AI films, visual storytelling, creative direction, commercial campaigns, motion graphics, and photography.
+              </p>
+
+              <div class="contact-direct">
+                <div class="direct-item">
+                  <span class="direct-label mono-sub">DIRECT PHONE</span>
+                  <a href="tel:+919130636170" class="direct-val-link mono-label text-amber">+91 9130636170</a>
+                </div>
+
+                <div class="direct-item">
+                  <span class="direct-label mono-sub">EMAIL ADDRESS</span>
+                  <div class="copy-email-wrap">
+                    <span id="email-address" class="direct-value mono-label text-teal">aarya.bhujade.123@gmail.com</span>
+                    <button id="copy-email-btn" class="copy-btn" title="Copy to clipboard">
+                      <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span id="copy-status" class="mono-sub">COPY</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="direct-item">
+                  <span class="direct-label mono-sub">BASE LOCATION</span>
+                  <span class="direct-value mono-sub">Mumbai, India</span>
+                </div>
+
+                <div class="direct-item">
+                  <span class="direct-label mono-sub">OFFICIAL CREDENTIALS</span>
+                  <a href="./assets/aarya_bhujade_resume.pdf" download="Aarya_Bhujade_Resume.pdf" class="hero-link mono-sub text-amber">Download Official CV (PDF) ➔</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brief Transmission Form -->
+            <div class="contact-right">
+              <form id="contact-form" class="brief-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="form-name" class="form-label mono-sub">YOUR NAME / PRODUCTION STUDIO</label>
+                    <input type="text" id="form-name" required placeholder="Christopher Nolan / Syncopy" class="form-input">
+                  </div>
+                  <div class="form-group">
+                    <label for="form-email" class="form-label mono-sub">DIRECT TRANSMISSION (EMAIL)</label>
+                    <input type="email" id="form-email" required placeholder="director@studio.com" class="form-input">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label mono-sub">PROJECT CLASSIFICATION</label>
+                  <div class="objective-selector">
+                    <button type="button" class="obj-chip active" data-value="ai-art">AI Art &amp; Image Generation</button>
+                    <button type="button" class="obj-chip" data-value="ai-film">AI Film &amp; Cinematic Video</button>
+                    <button type="button" class="obj-chip" data-value="concept">Concept Art &amp; Character Design</button>
+                    <button type="button" class="obj-chip" data-value="motion">Graphic &amp; Motion Graphics</button>
+                    <button type="button" class="obj-chip" data-value="photo">Professional Photography</button>
+                    <button type="button" class="obj-chip" data-value="vfx">Visual Effects &amp; Compositing</button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="form-label mono-sub">CREATIVE BRIEF / TIMELINE / VISION</label>
+                  <textarea id="form-message" rows="4" required placeholder="Tell me about your narrative vision, aesthetic rules, deadlines, and pipeline requirements..." class="form-textarea"></textarea>
+                </div>
+
+                <div class="form-footer">
+                  <div class="reply-guarantee mono-sub text-amber">✦ AARYA BHUJADE REPLIES WITHIN 24 HOURS</div>
+                  <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="btn-text">TRANSMIT BRIEF ➔</span>
+                  </button>
+                  <div id="form-feedback" class="form-feedback mono-sub" aria-live="polite"></div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="brand-symbol">⚡</span>
+        <span class="mono-sub">© 2026 Aarya Bhujade — AI Filmmaker &amp; Artist. All frames generated &amp; graded with intent.</span>
+      </div>
+      <div class="footer-mid">
+        <span class="mono-sub text-muted">LOCATION: MUMBAI // 24 FPS // REC READY</span>
+      </div>
+      <div class="footer-right">
+        <button id="back-to-top" class="back-to-top-btn mono-sub" title="Return to top">
+          <span>TOP [001]</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" data-lenis-prevent>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog glass-panel" data-lenis-prevent tabindex="-1">
+      <button class="modal-close" id="modal-close" aria-label="Close Modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body" id="modal-content" data-lenis-prevent></div>
+    </div>
+  </div>
+
+  <!-- COMIC CAROUSEL READER MODAL -->
+  <div id="comic-modal" class="modal" aria-hidden="true" role="dialog" data-lenis-prevent>
+    <div class="modal-backdrop" id="comic-modal-backdrop"></div>
+    <div class="modal-dialog comic-dialog glass-panel" data-lenis-prevent tabindex="-1">
+      <button class="modal-close" id="comic-modal-close" aria-label="Close Comic Reader">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="comic-modal-body" id="comic-modal-content" data-lenis-prevent></div>
+    </div>
+  </div>
+
+  <!-- CDN Dependencies: GSAP, ScrollTrigger, Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+
+  <!-- Application Logic & Curated Database -->
+  <script src="main.js"></script>
+</body>
+</html>
